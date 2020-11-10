@@ -1,0 +1,125 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #121212;
+}
+/*---------------------------------NAVBAR---------------------------------*/
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #121212;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*---------------------------------HEADER---------------------------------*/
+.header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/landingimage.jpg");
+  height: 132%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.header-text h2 {
+	font-size: 50px;
+}
+/*---------------------------------CARD---------------------------------*/
+h2 {
+	font-weight: 150;
+	color: white;
+	text-align: center;
+}
+
+.card {
+  margin: auto;
+  background-color: #333;
+  width: 40%;
+  height: 100%;
+}
+
+.container {
+  padding: 10px 16px;
+  color: white;
+}
+
+.container h4 {
+	font-weight: 150;
+}
+/*---------------------------------CONTACT---------------------------------*/
+#form-title {
+	text-transform: capitalize;
+	text-align: center;
+	background-color: #36096d;
+	background-image: linear-gradient(180deg, #36096d 0%, #37d5d6 74%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/*---------------------------------FOOTER---------------------------------*/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #121212;
+   color: white;
+   text-align: center;
+}
