@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid layout</title>
+</head>
+<style>
+  :root {
+  --main-radius: 10px;
+  --main-padding: 5px;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.2fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.5fr 1.2fr 0.3fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "footer footer footer footer";
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #004d40;
+  text-align: center;
+}
+
+nav {
+  background-color: #90d5ec;
+  background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+main {
+  background-color: #fce043;
+background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+.navi{
+  display: flex;
+  list-style-type:none;
+  justify-content: flex-end;
+  justify-content: space-around;
+
+}
+
+li{
+
+}
+
+#sidebar {
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  grid-area: sidebar;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content1 {
+  background: #55BDC9;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content2 {
+  background: #E9487C;
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content3 {
+  background: #C38D9E;
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+footer {
+  background-color: #90d5ec;
+  background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+}
+
+
+</style>
+<body>
+<div class="container">
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <ol class="navi">
+      <li>About</li>
+      <li>Experience</li>
+      <li>Work</li>
+      <li>Contact</li>
+     </ol>
+  </nav>
+ <!-- MAIN ELEMENT -->
+  <main>
+    <h1>Kean Lim</h1>
+    <h3>grid landing page</h3>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <div id="sidebar">
+
+  </div>
+
+  <!-- CONTENT LAYERS -->
+  <div id="content1">Content1</div>
+  <div id="content2">Content2</div>
+  <div id="content3">Content3</div>
+
+  <!-- FOOTER -->
+  <footer>Footer</footer>
+</div>
+
+</body>
+</html>
