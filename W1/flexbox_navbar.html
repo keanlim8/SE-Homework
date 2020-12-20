@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flexbox Navbar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#slide {
+  width: 15%;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  transition: width 1s ease-in-out 0s;
+}
+
+#slide:hover {
+  width: 100%;
+}
+
+#link1:hover {
+	background-color: blue;
+}
+
+#link2:hover {
+	background-color: red;
+}
+
+#link3:hover {
+	background-color: green;
+}
+
+#link4:hover {
+	background-color: gold;
+}
+</style>
+
+<body>
+
+<div id="slide" class="navbar">
+  <a href="#" id="link1">Link1</a>
+  <a href="#" id="link2">Link2</a>
+  <a href="#" id="link3">Link3</a>
+  <a href="#" id="link4">Link4</a>
+</div>
+
+</body>
+</html>
