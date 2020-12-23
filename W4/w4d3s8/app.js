@@ -1,3 +1,5 @@
+// Week 4 Day 3 Slide 8
+// Built a List From Input
 const list = [];
 
 $('form').on('submit', (event) => {
