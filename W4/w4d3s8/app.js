@@ -28,6 +28,6 @@ const render = () => {
   $('ul').append("<li>" + list[list.length-1] + "</li>");
   $('li').on('click', (event) => {
     $(event.currentTarget).append("<li>" + list[list.length-1] + "</li>");
-    $(event.currentTarget).parent("<li>" + list[list.length-1] + "</li>");
+    $(event.currentTarget).parent(
   });
 }

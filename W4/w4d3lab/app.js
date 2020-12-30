@@ -30,30 +30,31 @@
 //     $(event.currentTarget).effect('shake');
 //   });
 // }
-$(() => {
-  const list = [];
+const toDoList = [];
 
-  $('form').on('submit', (event) => {
-    console.log($("#input-box").val());
 
-    list.push($("#input-box").val());
+const completeButton = "<br> <button type = 'submit'> COMPLETE </button>";
+const removeButton = "<br> <button type = 'submit'> REMOVE </button>";
 
-    event.preventDefault();
-    $(event.currentTarget).trigger('reset');
 
-    render();
-  });
+$('form').on('submit', (event) => {
+  console.log( $('#input-box').val() );
 
-  const render = () => {
-    console.log('list: ', list);
-    // list.forEach((item) => {
-      $('#a').append('<li>' + list[list.length-1] + '</li>');
-      $('li').on('click', (event) => {
-        $(event.currentTarget).css('text-decoration');
-        $(event.currentTarget).effect('shake');
-        buttonnode.setAttribute('click', function(){.show('COMPLETED')})
-      })
-      console.log(list[list.length-1]);
-    // })
-  }
-})
+  toDoList.push( $('#input-box').val() );
+
+  event.preventDefault();
+  $(event.currentTarget).trigger('reset');
+
+  render("#to-do-list",toDoList);
+});
+
+
+
+const render = (listID,arrList)=>{
+	arrLength = arrList.length - 1;
+	console.log(arrLength);
+    $(listID).append(`<li id = ${arrLength}> ${arrList[arrLength]} ${completeButton} </li>`);
+    $('li').on('click', (event) =>{
+    	$(event.currentTarget).css('text-decoration', 'line-through');
+    });
+}
