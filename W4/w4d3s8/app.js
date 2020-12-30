@@ -27,7 +27,7 @@ $('form').on('submit', (event) => {
 const render = () => {
   $('ul').append("<li>" + list[list.length-1] + "</li>");
   $('li').on('click', (event) => {
-    $(event.currentTarget).css('text-decoration', 'line-through');
-    $(event.currentTarget).effect('shake');
+    $(event.currentTarget).append("<li>" + list[list.length-1] + "</li>");
+    $(event.currentTarget).parent("<li>" + list[list.length-1] + "</li>");
   });
 }

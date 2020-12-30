@@ -1,21 +1,33 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Text Form Testing</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">  <title>Document</title>  
-</head> 
+  <body>
+      <form>
+        <h1> What To Do </h1>
+          <input type="text"  id="input-box">
+          <input type="submit" id ="submit-btn" value="ADD">
+      </form>
+<div>
 
-<body> 
-  <form>  
-    <input type="text" placeholder="enter your first name" id="input-box"> 
-    <input type="submit" id="submit-btn" /> 
-  </form> 
-  <ul id="todo-list">   </ul>    
-  <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script> 
-  <script src="https://code.jquery.com/ui/1.12.0-rc.1/jquery-ui.min.js" integrity="sha256-mFypf4R+nyQVTrc8dBd0DKddGB5AedThU73sLmLWdc0=" crossorigin="anonymous"></script>  
-  <script type="text/javascript" src="app.js"> </script>  
-</body> 
+      <ul id="to-do-list">
+        <h4> things to do </h4>
+      </ul>
 
-</html> 
+
+      <ul id="done-list">
+        <h4> things that are done </h4>
+        </ul>
+        </div>
+
+
+          <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+          <script src="https://code.jquery.com/ui/1.12.0-rc.1/jquery-ui.min.js" integrity="sha256-mFypf4R+nyQVTrc8dBd0DKddGB5AedThU73sLmLWdc0=" crossorigin="anonymous"></script>
+          <script  type="text/javascript" src="app.js"> </script>
+  </body>
+
+</html>
