@@ -34,7 +34,7 @@ $(() => {
             console.log("i value is:" + i);
             //tbody and its id should be together or it won't display data
             $('tbody#cardData').append(
-              '<tr><td>' +
+              '<tr><td> 🚨' +
               data[i].descriptor +
               '</td><td><div id=' + buttonNum + '><button onclick = showDesc(' + i + ') /button class="redBtn">WHAT DID THE POLICE DO?</div>' //calling showDesc function
               +
