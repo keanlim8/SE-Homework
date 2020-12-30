@@ -13,21 +13,20 @@ $('form').on('submit', (event) => {
   render();
 });
 
-// const render = () => {
-//   console.log('list: ', list);
-//   list.forEach((item) => {
-//     $('ul').append('<li>' + item + '</li>');
-//     $('li').on('click', (event) => {
-//       $(event.currentTarget).css('text-decoration', 'line-through');
-//       $(event.currentTarget).effect('shake');
-//     })
-//     console.log(item);
-//   })
-// }; 
 const render = () => {
-  $('ul').append("<li>" + list[list.length-1] + "</li>");
-  $('li').on('click', (event) => {
-    $(event.currentTarget).append("<li>" + list[list.length-1] + "</li>");
-    $(event.currentTarget).parent(
-  });
-}
+  console.log('list: ', list);
+  list.forEach((item) => {
+    $('ul').append('<li>' + item + '</li>');
+    $('li').on('click', (event) => {
+      $(event.currentTarget).css('text-decoration', 'line-through');
+      $(event.currentTarget).effect('shake');
+    })
+    console.log(item);
+  })
+}; 
+// const render = () => {
+//   $('ul').append("<li>" + list[list.length-1] + "</li>");
+//   $('li').on('click', (event) => {
+//     $(event.currentTarget).append("<li>" + list[list.length-1] + "</li>");
+// });
+// };
