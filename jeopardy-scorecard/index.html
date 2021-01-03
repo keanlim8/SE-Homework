@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeopardy</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js">
+  </script>
+  <script type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="grid-score">
+  <div id="team1">
+    TEAM 1
+    <h1 class="score1"></h1>
+    <button class="increment1">+</button>
+    <button class="decrement1">-</button>
+  </div>
+  <div id="team2">
+    TEAM 2
+    <h1 class="score2"></h1>
+    <button class="increment2">+</button>
+    <button class="decrement2">-</button>
+  </div>
+  <div id="team3">
+    TEAM 3
+    <h1 class="score3"></h1>
+    <button class="increment3">+</button>
+    <button class="decrement3">-</button>
+  </div>
+  <div id="team4">
+    TEAM 4
+    <h1 class="score4"></h1>
+    <button class="increment4">+</button>
+    <button class="decrement4">-</button>
+  </div>
+  <div id="team5">
+    TEAM 5
+    <h1 class="score5"></h1>
+    <button class="increment5">+</button>
+    <button class="decrement5">-</button>
+  </div>
+</div>
+</div>
+
+  <div>
+    <div class="board">
+      <div class="row categories">
+        <div class="tile">Category 1</div>
+        <div class="tile">Category 2</div>
+        <div class="tile">Category 3</div>
+        <div class="tile">Category 4</div>
+        <div class="tile">Category 5</div>
+      </div>
+      <div class="row clues">
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues">
+        <div class="tile">
+          <div class="question-value">$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues">
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues">
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues">
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
