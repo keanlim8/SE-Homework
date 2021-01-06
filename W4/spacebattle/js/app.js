@@ -55,8 +55,11 @@ const game = {
             let answer = prompt('Would you like to attack the next ship or retreat?');
             //if answer is retreat, game is over
             if (answer.toLowerCase() === 'retreat') {
-              console.log('Game Over.');
-              //exit out of game
+              console.log('%cGame Over.', "display: inline-block ; background-image: url( 'https://i.ibb.co/hVSpNyn/gameover2.gif' ) ; " +
+                "background-size: cover; padding: 10px 340px 190px 10px; " +
+                "border: 2px solid black; font-size: 15px; line-height: 11px; " +
+                "font-family: monospace;");
+              //exit out of game 
               this.playing = false;
             } else if (answer.toLowerCase() === 'attack') {
               //attack next alien ship
