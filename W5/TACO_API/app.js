@@ -10,8 +10,8 @@ class App extends React.Component {
     const data = await response.json();
     console.table(data);
     this.setState({test: data, loading: false})
-  }
-
+  }deren
+cpro
   render() {
     return (
       <div>
@@ -19,7 +19,7 @@ class App extends React.Component {
       ) : (
 
 
-        <div><pre>Recipe: {this.state.test.seasoning.recipe}</pre></div>
+        <div><pre>Recipe:    {this.state.test.seasoning.recipe}</pre></div>
 
 
 

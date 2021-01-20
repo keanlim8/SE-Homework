@@ -21,9 +21,9 @@ class App extends Component {
       time: ''
     }
   }
-  handleChange(e) {
-    this.setState( { [e.target.id]: e.target.value } )
-    this.handleChange = this.handleChange.bind(this)
+  handleChange = (e) => {
+    this.setState({[e.target.id]: e.target.value })
+    // this.handleChange = this.handleChange.bind(this)
   }
   handleSubmit(e) {
     // prevents default behavior of submitting a form
